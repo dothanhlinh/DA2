@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icontab.ico">
+
+    <!-- Phần link của các file -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Responsive.css">
+  
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <title>Thai market</title>
+</head>
+<body>
+    <div id="main">
+
+        <!-- Phần đầu của trang web -->
+        <div id="header">
+            <div class="header_information">
+                <ul>
+                    <li>
+                        <a class="header_information-link" href="#"><i class="fa-solid fa-phone"></i>+ 840987823</a>
+                        <a class="header_information-link" href="#"><i class="ti-email"></i>linhdo0502@gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="header_information-link " href="#"><i  class="ti-search header_information-link-search"></i></a>
+                        <input class="header_information-link-search-input" type="search" placeholder="Tìm kiếm...">
+                        <a class="header_information-link" href="#"> <font color="#C09440;">VN</font> | EN</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="header_menu">
+                <ul>
+                    <li>
+                        <a class="header_menu_link" style="color: #C09440;" href="#">TRANG CHỦ</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="introduce.html">VỀ THAIMARKET</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">THỰC ĐƠN</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">KHUYẾN MÃI</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link_logo" href="#"> <img src="images/logo.png" alt="" class="header_menu_link_logo"></a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">HỆ THỐNG NHÀ HÀNG</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">HÌNH ẢNH </a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">TIN TỨC</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <label for="nav-mobile-input"class="click_times" style="font-size: 30px;" >
+                <i class="ti-menu click_times-click_time-menu-mobile"></i>
+            </label>
+            <div class="header_menu_mobile-phone">
+                <i class="fa-solid fa-phone-flip icon-phone"></i>
+            </div>
+
+
+            <input type="checkbox"  hidden name="" class="nav__input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input"class="nav__overlay"></label>
+
+            <div class="header_menu_mobile">
+                <label  for="nav-mobile-input" class="header_menu_mobile-close">
+                    <i class="header_menu_mobile-close-click ti-close"> 
+                    </i>
+                </label>
+
+                <div class="header_menu_mobile-search">
+                    <input type="search" placeholder="Tìm kiếm..." >
+                    <h5>THAI MARKET</h5>
+                </div>
+                <ul>
+                    <li>
+                        <a class="header_menu_link-mobile" style="color: #C09440;" href="index.html">TRANG CHỦ</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="introduce.html">VỀ THAIMARKET</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">THỰC ĐƠN</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">KHUYẾN MÃI</a>
+                        
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">HỆ THỐNG NHÀ HÀNG</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">HÌNH ẢNH </a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">TIN TỨC</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#">LIÊN HỆ</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_link-mobile" href="#"><font color="#C09440;">VN</font>| EN</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- phần icon messenger  -->
+        <div class="messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+
+        <!-- Phần slide của trang web -->
+        <div id="slider">
+            <div class="slider_content">
+                <a href="#">
+                    <div id="slider_img">
+                        <img id="slider_img-all"  onclick="changeImage()" src="images/slider1.jpg" alt="">
+                    </div>
+                    <div class="slider_order">
+                        <a href="#">
+                            <img src="https://thaimarket.vn/images/db.svg" alt="">
+                            <p>ĐẶT BÀN</p>
+                        </a>
+                    </div>
+
+                    <div class="slider-form-order">
+                        <div class="slider-form-order-close">
+                            <i class="far fa-times-circle" onclick="clickclose()"></i>
+                        </div>
+                        <h2>Thông Tin</h2>
+                        <form action="">
+                            <input class="slider-form-order-input" type="text" placeholder="Họ Tên"> <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Số Điện Thoại" > <br>
+                            <input class="slider-form-order-input"type="Email" placeholder="Email"> <br>
+                            <select name="" class="slider-form-order-input">
+                                <option value="">Chọn nhà hàng</option>
+                                <option value="">Thai Market 183 Nguyễn Văn Thoại</option>
+                                <option value="">Thai Market 46 Thái Phiên</option>
+                                <option value="">Thai Market 04 Trần Quốc Toản</option>
+                                <option value="">Thai Market Hội AnChọn nhà hàng</option>
+                                <option value="">Thai Market Sun World Bà Nà Hill</option>
+                                <option value="">Thai Market 17 Lê Hồng Phong</option>
+                                <option value="">Thai Market 43 Bình Minh 5</option>
+                            </select> 
+                            <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Người lớn"> <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Trẻ con" > <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Số lượng bàn" > <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Ngày đến" > <br>
+                            <input class="slider-form-order-input"type="text" placeholder="Giờ đến" > <br>
+
+                            <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Đặt món ăn"></textarea> -->
+                        </form>
+                        <div class="slider-form-order-btn">
+                            <button onclick="clickorderbtn()"> Gửi </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slider_img-mountain">
+                <img src="images/cong.png" alt="">
+                <div class="slider_img_introduce">
+                    <div class="slider_img_introduce-container">
+                        <h1>Về Chúng tôi</h1>  
+                        <h4>CUỘC HÀNH TRÌNH CỦA THAIMARKET</h4>
+                        <img src="https://thaimarket.vn/images/vct.png" alt="">
+                        <p>XEM THÊM<i class="ti-arrow-right " style="font-size: 10px;margin-left: 2px;"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần Nội dung  -->
+        <div id="container">
+
+
+            <!-- Phần hệ thống nhà hàng  -->
+            <div class="container-system-restaurant">
+                <div class="container-system-restaurant-left">
+                    <h1 style="font-family: 'Dancing Script', cursive;" >Hệ thống nhà hàng</h1>
+                    <h4 style="color: white;font-weight: 100; letter-spacing: 1.5px;" >"Thai Market Delicious food Cooked With Lots
+                        Of love and Care
+                        "</h4>
+                </div>
+                <div class="container-system-restaurant-right">
+                        <select name="container-system-restaurant-right-slect" id="container-system-restaurant-right-slect">
+                            <option value="">CƠ SỞ THAIMARKET TẠI HỘI AN</option>
+                            <option value="">CƠ SỞ THAIMARKET TẠI ĐÀ NẴNG</option>
+                        </select>
+                </div>
+            </div>
+
+            <!-- slide địa chỉ -->
+            <div class="img-slider-address">
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address1.jpg" alt="">
+                    </div>
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market Sun World Bà Nà Hill</p>
+                        <p class="img-title-address-introduce" >Sun World Bà Nà Hill, Đà Nẵng</p>
+                    </div>
+                </div>
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address2.jpg" alt="">
+                    </div>
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market 43 Bình Minh 5</p>
+                        <p class="img-title-address-introduce" >43 Bình Minh 5, Đà Nẵng</p>
+                    </div>
+                </div>
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address3.jpg" alt="">
+                    </div>
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market 17 Lê Hồng Phong</p>
+                        <p class="img-title-address-introduce" >17 Lê Hồng Phong, Đà Nẵng</p>
+                    </div>
+                </div>
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address4.png" alt="">
+                    </div >
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market 46 Thái Phiên</p>
+                        <p class="img-title-address-introduce" >46 Thái Phiên, Đà Nẵng</p>
+                    </div>
+                </div>
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address5.png" alt="">
+                    </div>
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market 04 Trần Quốc Toản</p>
+                        <p class="img-title-address-introduce" >04 Trần Quốc Toản, Đà Nẵng</p>
+                    </div>
+                </div>
+
+                <div class="img-item">
+                    <div class="img-items">
+                        <img src="images/slider-address6.jpg" alt="">
+                    </div>
+                    <div class="img-title">
+                        <p class="img-title-address"><i class="fas fa-map-marker-alt img-title-address-icons"></i>Thai Market 183 Nguyễn Văn Thoại</p>
+                        <p class="img-title-address-introduce" >183 Nguyễn Văn Thoại, Đà Nẵng</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sale -->
+            <div class="container-sale">
+                <img src="images/sale.jpg" alt="">
+            </div>
+
+            <!-- Phần Địa chỉ các cơ sở nhà hàng và các món ăn -->
+            <div class="list-menu">
+
+                <h1>Thực đơn</h1>
+                <h3>CÁC MÓN ĂN LÀM NÊN THƯƠNG HIỆU CỦA CHÚNG TÔI</h3>
+                <!-- <img src="https://thaimarket.vn/images/vct.png" alt=""> -->
+                <div class="list-menu-address row">
+                    <button class="list-menu-address-btn address-btn1 c-12 m-6 l-2" onclick="btn1()">Thai Market 183 Nguyễn văn Thoại</button>
+                    <button class="list-menu-address-btn address-btn2 c-12 m-6 l-2"onclick="btn2()">Thai Market 17 Lê Hồng Phong</button>
+                    <button class="list-menu-address-btn address-btn3 c-12 m-6 l-2"onclick="btn3()">Thai Market 04 Trần Quốc Toản</button>
+                    <button class="list-menu-address-btn address-btn4 c-12 m-6 l-2"onclick="btn4()">Thai Market 43 Bình Minh 5</button>
+                    <button class="list-menu-address-btn address-btn5 c-12 m-6 l-2"onclick="btn5()">Thai Market 46 Thái Phiên</button>
+                    <button class="list-menu-address-btn address-btn6 c-12 m-6 l-2"onclick="btn6()">Thai Market Bà Nà Hills</button>
+                    <button class="list-menu-address-btn address-btn7 c-12 m-6 l-2"onclick="btn7()">Thai Market Hội An</button>
+                </div>
+                <!-- Các tên loại món ăn  -->
+
+                <div class="list-food-menu-all">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món trộn</option>
+                            <option value="">Món Chiên & Xào</option>
+                            <option value="">Món khai vị</option>
+                            <option value="">Món canh</option>
+                            <option value="">Cơm chiên & Mỳ</option>
+                            <option value="">Cà ri và lẩu</option>
+                            <option value="">Món chay</option>
+                            <option value="">Món kèm thêm</option>
+                            <option value="">Tráng miệng và đồ ăn Thái</option>
+                            <option value="">soft drink and Beer</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Gỏi tôm sống <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Cổ heo nướng <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Gỏi nấm hải sản <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Gỏi cổ heo nướng <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                <li><a href="#">5. Gỏi nghêu<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">6. Gỏi Hải sản <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Gỏi xoài xanh
+                                        <ul class="submenu-left7">
+                                            <li><a href="#">Hải sản<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                            <li><a href="#">Cá trê <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                        </ul>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">9. Gỏi thịt bằm
+                                    <ul class="submenu-right9">
+                                        <li><a href="#">Heo<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >70.000 đ</span></a></li>
+                                        <li><a href="#">Gà<img src="https://thaimarket.vn/images/gn.svg" alt="" ><span class="list-menu-right-price" >70.000 đ</span></a></li>
+                                        <li><a href="#">Bò<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >90.000 đ</span></a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">10. Gỏi đu đủ thái
+                                    <ul class="submenu-right10">
+                                        <li><a href="#">Tôm khô<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >45.000 đ</span></a></li>
+                                        <li><a href="#">Ba Khía<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >50.000 đ</span></a></li>
+                                        <li><a href="#">Hải sản<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >75.000 đ</span></a></li>
+                                        <li><a href="#">Ba khía tôm sống<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-right-price" >95.000 đ</span></a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">11. Gỏi rau muống chiên giòn <span class="list-menu-right-price" >85.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+                <!--  -->
+                <div class="list-food-menu-all1">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món nướng</option>
+                            <option value="">Món khai vị</option>
+                            <option value="">Cơm chiên và mỳ xào</option>
+                            <option value="">Món gỏi</option>
+                            <option value="">Lẩu thái</option>
+                            <option value="">Cuộn -cuộn</option>
+                            <option value="">Món tráng muộn và đồ uống</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Nạc vai heo <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Ba chỉ heo <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Cổ heo <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Diềm <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                <li><a href="#">5. Vú heo<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">6. Nạc vai bò <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Ba chỉ bò <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">8. Thăn bò <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">9. Vai bò  <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">10. Đùi bò <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                <li><a href="#">11. Cách gà <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">12. Ức gà <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">13. Tôm Nướng <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">14. Mực nướng  <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">15. Bạch tuộc nướng <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">16. Nghêu nướng  <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">17. Ếch nướng <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>                                
+                            
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+                <div class="list-food-menu-all2">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món khai vị</option>
+                            <option value="">Món trộn</option>
+                            <option value="">Món Chiên & Xào</option>
+                            <option value="">Món canh</option>
+                            <option value="">Cơm chiên & Mỳ</option>
+                            <option value="">Cà ri và lẩu</option>
+                            <option value="">Món chay</option>
+                            <option value="">Món kèm thêm</option>
+                            <option value="">Tráng miệng và đồ ăn Thái</option>
+                            <option value="">soft drink and Beer</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Phồng tôm <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Khoai tây chiên <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Chả cá Thái Lan <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Khoai sọ Lệ Phố<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">5. Chả bắp<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">6. Chả tôm<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Cách gà chiên<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">8. Chả giò<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+                <div class="list-food-menu-all3">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món khai vị</option>
+                            <option value="">Món Chiên & Xào</option>
+                            <option value="">Nước uống</option>
+                            <option value="">Món canh</option>
+                            <option value="">Cơm chiên & Mỳ</option>
+                            <option value="">Cà ri và lẩu</option>
+                            <option value="">Món chay</option>
+                            <option value="">Món kèm thêm</option>
+                            <option value="">Tráng miệng và đồ ăn Thái</option>
+                            <option value="">soft drink and Beer</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Phồng tôm <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Khoai tây chiên <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Chả cá Thái Lan <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Khoai sọ Lệ Phố<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">5. Chả bắp<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">6. Chả tôm<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Cách gà chiên<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">8. Chả giò<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+                <div class="list-food-menu-all4">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món khai vị</option>
+                            <option value="">Món Chiên & Xào</option>
+                            <option value="">Món canh</option>
+                            <option value="">Cơm chiên & Mỳ</option>
+                            <option value="">Cà ri và lẩu</option>
+                            <option value="">Món chay</option>
+                            <option value="">Món kèm thêm</option>
+                            <option value="">Tráng miệng và đồ ăn Thái</option>
+                            <option value="">soft drink and Beer</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Phồng tôm <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Khoai tây chiên <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Chả cá Thái Lan <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Khoai sọ Lệ Phố<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">5. Chả bắp<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">6. Chả tôm<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Cách gà chiên<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                <li><a href="#">8. Chả giò<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+                <div class="list-food-menu-all5">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Cơm chiên & Mỳ</option>
+                            <option value="">Món trộn</option>
+                            <option value="">Thịt nướng và canh</option>
+                            <option value="">Tráng miệng và đồ uống</option>
+                            <option value="">soft drink and Beer</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Phở kiểu Thái gà <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Phở kiểu Thái tôm<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">3. Cơm chiên gà <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Cơm chiên tôm <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+                <div class="list-food-menu-all6">
+                    <div class="list-menu-kind">
+                        <select name="list-menu-kind-items" id="list-menu-kind-items">
+                            <option value="">Món Khai vị</option>
+                            <option value="">Món Chiên & Mỳ</option>
+                            <option value="">Món trộn</option>
+                            <option value="">Lẩu Thái</option>
+                            <option value="">Cuộn-xiên</option>
+                            <option value="">Món nướng</option>
+                            <option value="">Món ăn thêm</option>
+                            <option value="">Món kèm thêm</option>
+                            <option value="">Tráng miệng và đồ uống</option>
+                            <option value="">Menu đặc biệt</option>
+                        </select>
+                    </div>               
+                    <!-- các món ăn  -->
+                    <div class="list-menu-all">
+    
+    
+                        <div class="list-menu-left">
+                            <ul>
+                                <li><a href="#">1. Phồng tôm <img src="https://thaimarket.vn/images/gn.svg" alt=""> <span class="list-menu-left-price" >80.000 đ</span> </a></li>
+                                <li><a href="#">2. Khoai tây chiên<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">85.000 đ</span></a></li>
+                                <li><a href="#">3. Chả cá Thái Lan <img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">90.000 đ</span></a></li>
+                                <li><a href="#">4. Khoai sọ Lệ Phố<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">95.000 đ</span></a></li>
+                                <li><a href="#">5. Chả bắp<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price"> 70.000 đ</span></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="list-menu-left-line">
+                            <img src="https://thaimarket.vn/images/gmn.svg" alt="">
+                        </div>
+                        <div class="list-menu-right">
+                            <ul>
+                                <li><a href="#">6. Chả tôm<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">7. Cánh gà chiên<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">8. Chả giò<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                                <li><a href="#">9. Da heo chiên giòn<img src="https://thaimarket.vn/images/gn.svg" alt=""><span class="list-menu-left-price">135.000 đ</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="bock-menu">
+                        <a href="https://thaimarket.vn/uploads/document/phw6gw82-48-menu.PNG"> <img src="https://thaimarket.vn/images/mnu.svg" alt="">  </a>
+                    </div>    
+                </div>
+
+            </div>
+
+
+            <!-- Giới thiệu nhà hàng và các món ăn  -->
+            <div class="container-introduce">
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce1.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce2.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce3.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce4.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce5.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce6.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="container-introduce-restaurant">
+                    <img src="images/img-introduce7.jpg" alt="">
+                    <div class="container-introduce-restaurant-opacity">
+                    </div>
+                    <div class="container-introduce-restaurant-icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>   
+
+        </div>
+        <div id="footer">
+
+            <!-- Phần liên hệ  -->
+            <div class="footer-information">
+                <img class="footer-information-img-top" src="https://thaimarket.vn/images/tren.png" alt="">
+                <div class="footer-information-all">
+                    <h1>Liên hệ </h1>
+                    <h3>“NHỮNG MÓN ĂN NGON TUYỆT ĐƯỢC NẤU TỪ RẤT NHIỀU YÊU THƯƠNG VÀ TÂM HUYẾT”</h3>
+                    <div class="footer-information-all-icons">
+                        <div class="footer-information-all-icons-item">
+                            <h5><i class="far fa-clock"></i> 10:00 am To 22:00 pm</h5>
+                            <h5><i class="ti-email"></i> linhdo0502@gmail.com</h5>
+                        </div>
+                        <div class="footer-information-all-icons-item">
+                            <h5><i class="fa-solid fa-phone"></i> +84 932 93 42 99</h5>
+                            <h5><i class="ti-email"></i> linhdo0502@gmail.com</h5>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Họ Tên"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="text" placeholder="Tiêu Đề"><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Nội Dung"></textarea>
+                    <div class="footer-information-btn">
+                        <button>Gửi</button>
+                    </div>
+                </div>
+                <img class="footer-information-img-bottom" src="https://thaimarket.vn/images/duoi.png" alt="">
+            </div>
+
+
+            
+            <div class="footer_img-mountain">
+                <img src="images/congcorlor.png" alt="">
+            </div>
+
+            <div class="footer_detailed-information">
+                <div class="footer_detailed-information-all">
+                    <div class="footer_detailed-information-left">
+                        <h2>Liên hệ với chúng tôi</h2>
+                        <h5>Bạn muốn tham gia cùng chúng tôi trên mạng xã hội</h5>
+                        <div class="footer_detailed-information-left-icons">
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h6>Copyright© 2019 <font color="#C09440">Thai Market</font>. All rights reserved.</h6>
+                    </div>
+                    <div class="footer_detailed-information-logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="footer_detailed-information-right">
+                        <h2>Nhận đăng ký bản tin</h2>
+                        <h5>Nhận đăng ký bản tin từ chúng tôi</h5>
+                        <input type="email" placeholder="Email...">
+                        <button><i class="ti-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
